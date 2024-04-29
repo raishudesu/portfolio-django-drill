@@ -77,7 +77,8 @@ main {
 /* about page */
 
 .about h1,
-.projects h1 {
+.projects h1,
+.contact h1 {
   font-size: 2rem;
 }
 
@@ -114,6 +115,16 @@ main {
   max-width: 40rem;
 }
 
+/* contact */
+
+.email {
+  display: flex;
+}
+
+.contact div div svg {
+  max-width: 3em;
+}
+
 /* VIEW PORTS */
 
 @media (max-width: 640px) {
@@ -124,7 +135,7 @@ main {
     font-size: 1.5rem;
   }
   .tech-stack ul {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
   }
   .projects-container {
     grid-template-columns: auto;
