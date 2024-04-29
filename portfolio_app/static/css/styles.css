@@ -40,8 +40,9 @@ main {
 
 /* PAGES */
 
-/* hero */
-.hero {
+/* landing hero */
+.hero,
+.about {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -56,14 +57,35 @@ main {
   font-size: 2rem;
 }
 
-.hero-links a svg {
+.hero-links a svg,
+.tech-stack ul li svg {
   max-width: 2rem;
   transition: 0.3s;
 }
 
-.hero-links a svg:hover {
+.hero-links a svg:hover,
+.tech-stack ul li svg:hover {
   scale: 1.1;
   transition: 0.3s;
+}
+
+/* about page */
+
+.about h1 {
+  font-size: 2rem;
+}
+
+.tech-stack ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1em;
+  list-style: none;
+}
+
+.tech-stack ul li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 /* VIEW PORTS */
@@ -74,5 +96,8 @@ main {
   }
   .hero h2 {
     font-size: 1.5rem;
+  }
+  .tech-stack ul {
+    grid-template-columns: auto auto auto;
   }
 }
